@@ -8,6 +8,7 @@ import { navLinks } from '../constants';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  console.log(logo);
 
   return (
     <nav
@@ -22,11 +23,7 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img
-            src='src\assets\logo.png'
-            alt='logo'
-            className='w-14 h-14 object-contain'
-          ></img>
+          <img src={logo} alt='logo' className='w-14 h-14 object-contain'></img>
           <p className='text-white text-[18px] font-bold cursor-pointer'>
             Roman <span className='sm:block hidden'>Pun</span>
           </p>
